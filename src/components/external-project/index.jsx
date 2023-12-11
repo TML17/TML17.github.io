@@ -34,7 +34,7 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
                       })}
                     </h2>
                     <div className="avatar w-full h-full">
-                      <div className="w-20 h-20 mask mask-squircle mx-auto">
+                      <div className=" mask mask-squircle mx-auto">
                         {skeleton({
                           width: 'w-full',
                           height: 'h-full',
@@ -103,7 +103,7 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
                   </h2>
                   {item.imageUrl && (
                     <div className="avatar opacity-90">
-                      <div className="w-20 h-20 mask mask-squircle">
+                      <div className=" mask mask-squircle">
                       </div>
                     </div>
                   )}
