@@ -2,7 +2,7 @@
 
 const config = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (Required)
+    username: 'TML17', // Your GitHub org/user name. (Required)
     sortBy: 'stars', // stars | updated
     limit: 10, // How many projects to display.
     exclude: {
@@ -11,57 +11,50 @@ const config = {
     },
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'chenxing-liu-916730204',
+    twitter: '',
+    mastodon: '',
     facebook: '',
     instagram: '',
-    youtube: '', // example: 'pewdiepie'
+    youtube: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
+    medium: '',
+    dev: '',
+    stackoverflow: '',
     skype: '',
     telegram: '',
-    website: 'https://arifszn.com',
+    website: 'https://TML17.github.io',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'liuchenxing9@gmail.com',
   },
   resume: {
     fileUrl:
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
+    'Python',
+    'Java',
     'JavaScript',
     'React.js',
     'Node.js',
-    'Nest.js',
+    'C++',
     'MySQL',
-    'PostgreSQL',
+    'C',
     'Git',
-    'Docker',
-    'PHPUnit',
+    'HTML',
     'CSS',
-    'Antd',
-    'Tailwind',
+    'R & RShint',
+    'Tensorflow',
+    'Pytorch',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Democratic System Inc.',
+      position: 'Software Engineer Intern',
+      from: 'September 2023',
+      to: 'December 2023',
+      companyLink: 'https://https://democraticsystems.org',
     },
   ],
   /* certifications: [
@@ -74,16 +67,10 @@ const config = {
   ], */
   education: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Grinnell College',
+      degree: 'Bachelors of Arts',
+      from: 'August 2021',
+      to: 'Present',
     },
   ],
 
