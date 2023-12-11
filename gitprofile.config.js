@@ -104,6 +104,20 @@ const config = {
       imageUrl: '/images/img2.png',
       link: 'https://github.com/DemocraticSystemsIncorporated/DSI-Performance-Tool/tree/all_years',
     },
+    {
+      title: 'Contrastive Canonical Correlation Analysis (cCCA) Development',
+      description:
+        'Addressed the limitation of CCA by integrating principles from Contrastive Learning to emphasize differential features. Then introduced concepts of target datasets and background datasets, allowing cCCA to maximize correlation and intra-view variance of target data while minimizing background data variance. Developed an algorithm and conducted experiments on an artificially synthesized dataset and two real datasets using Python, showcasing superior effectiveness of the cCCA algorithm.',
+      imageUrl: '/images/img3.png',
+      link: 'Canonical__Correlation_Analysis_based_on_Contrastive_Learning.pdf',
+    },
+    {
+      title: 'Mixed-effects Logistic Regression Model on Fosterage Children',
+      description:
+        'Systematically built and evaluated mixed-effects logistic regression models. Manually processing stepwise regression with varying predictor combinations, using the AIC for optimal model selection. In the process of development, I implemented parallel processing techniques for efficient computation during model evaluation, handling the computational complexity of evaluating numerous model combinations.',
+      imageUrl: '/images/img4.png',
+      link: 'https://github.com/TML17/Dominican-Republic-Foster-Children',
+    },
   ],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
