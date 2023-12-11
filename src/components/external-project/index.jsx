@@ -108,15 +108,6 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
                     </div>
                   )}
                   </p>
-                        <LazyImage
-                          src={item.imageUrl}
-                          alt={'thumbnail'}
-                          placeholder={skeleton({
-                            /*width: 'w-full',
-                            height: 'h-full',*/
-                            shape: '',
-                          })}
-                        />
                 </div>
               </div>
             </div>
