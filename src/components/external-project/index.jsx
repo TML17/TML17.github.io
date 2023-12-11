@@ -108,8 +108,8 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
                           src={item.imageUrl}
                           alt={'thumbnail'}
                           placeholder={skeleton({
-                            width: 'w-full',
-                            height: 'h-full',
+                            /*width: 'w-full',
+                            height: 'h-full',*/
                             shape: '',
                           })}
                         />
