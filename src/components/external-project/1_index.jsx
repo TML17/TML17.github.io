@@ -34,7 +34,7 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
                       })}
                     </h2>
                     <div className="avatar w-full h-full">
-                      <div className="w-20 h-20 mask mask-squircle mx-auto">
+                      <div className=" mask mask-squircle mx-auto">
                         {skeleton({
                           width: 'w-full',
                           height: 'h-full',
@@ -103,22 +103,38 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
                   </h2>
                   {item.imageUrl && (
                     <div className="avatar opacity-90">
-                      <div className="w-20 h-20 mask mask-squircle">
-                        <LazyImage
-                          src={item.imageUrl}
-                          alt={'thumbnail'}
-                          placeholder={skeleton({
-                            width: 'w-full',
-                            height: 'h-full',
-                            shape: '',
-                          })}
-                        />
+                      <div className=" mask mask-squircle">
                       </div>
                     </div>
                   )}
-                  <p className="mt-1 text-base-content text-opacity-60 text-sm">
-                    {item.description}
-                  </p>
+                  
+{item.imageUrl && (
+  <div className="opacity-90">
+    <p className="text-base-content text-opacity-60 text-sm">
+      {item.description}
+    </p>
+    <LazyImage
+      src={item.imageUrl}
+      alt={'thumbnail'}
+      placeholder={skeleton({
+        width: 'w-full',
+        // Uncomment or adjust these as needed to make the image responsive and full-width
+        // height: 'h-auto', 
+        shape: '',
+      })}
+      className="w-full" // This will make the image responsive and take up the full width
+    />
+  </div>
+)}
+
+                          src={item.imageUrl}
+                          alt={'thumbnail'}
+                          placeholder={skeleton({
+                            /*width: 'w-full',
+                            height: 'h-full',*/
+                            shape: '',
+                          })}
+                        />
                 </div>
               </div>
             </div>
