@@ -68,7 +68,7 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
     return array;
   };
 
-  const renderExternalProjects =const renderExternalProjects = () => {
+const renderExternalProjects = () => {
   return externalProjects.map((item, index) => (
     <a
       className="card shadow-lg compact bg-base-100 cursor-pointer"
