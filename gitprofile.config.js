@@ -94,14 +94,14 @@ const config = {
       title: 'Greenhouse Gas Emission Visualization',
       description:
         'Developed a robust data visualization application and implemented user-friendly interactive controls, using R and Shiny to dynamically represent greenhouse gas emissions by countries and Instituted a clean and modern web interface design, ensuring an engaging user experience with dynamic hover effects and transparency settings.',
-      imageUrl: 'images/img1.png',
+      imageUrl: '/images/img1.png',
       link: 'https://tml17.shinyapps.io/csc324_individual_project/',
     },
     {
       title: 'DSI Performance-Tool',
       description:
         'The DSI-Performance-Tool represents a joint project carried out by a five-member team, crafted using Python and Flask, and is designed for analyzing food security policies. This tool is notable for its strong data processing abilities and its capacity for generating dynamic charts. My role mainly involved front-end development, concentrating on improving the user interface and overall user experience. This effort ensured that the tool was not only analytically robust but also intuitive and easy to use',
-      imageUrl: 'images/img2.png',
+      imageUrl: '/images/img2.png',
       link: 'https://github.com/DemocraticSystemsIncorporated/DSI-Performance-Tool/tree/all_years',
     },
   ],
