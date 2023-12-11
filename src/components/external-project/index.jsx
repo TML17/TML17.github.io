@@ -101,13 +101,6 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
                   <h2 className="font-semibold text-lg tracking-wide text-center opacity-60 mb-2">
                     {item.title}
                   </h2>
-                  {item.imageUrl && (
-                    <div className="avatar opacity-90">
-                      <div className="w-20 h-20 mask mask-squircle">
-                      </div>
-                    </div>
-                  )}
-                  </p>
                 </div>
               </div>
             </div>
