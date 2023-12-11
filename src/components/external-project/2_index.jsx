@@ -107,26 +107,8 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
                       </div>
                     </div>
                   )}
-                  
-{item.imageUrl && (
-  <div className="opacity-90">
-    <p className="text-base-content text-opacity-60 text-sm">
-      {item.description}
-    </p>
-    <LazyImage
-      src={item.imageUrl}
-      alt={'thumbnail'}
-      placeholder={skeleton({
-        width: 'w-full',
-        // Uncomment or adjust these as needed to make the image responsive and full-width
-        // height: 'h-auto', 
-        shape: '',
-      })}
-      className="w-full" // This will make the image responsive and take up the full width
-    />
-  </div>
-)}
-
+                  </p>
+                        <LazyImage
                           src={item.imageUrl}
                           alt={'thumbnail'}
                           placeholder={skeleton({
