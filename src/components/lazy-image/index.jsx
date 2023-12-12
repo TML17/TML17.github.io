@@ -1,29 +1,35 @@
-import { useState, Fragment, useEffect } from 'react';
-import PropTypes from 'prop-types';
 
-const LazyImage = ({ placeholder, src, alt, ...rest }) => {
-  const [loading, setLoading] = useState(true);
+renderExternalProjects = () => {
+    return externalProjects.map((item, index) => (
+      <div className="project-container" key={index}>
+        {/* Description at the top */}
+        <div className="project-description">
+          <h2>{item.title}</h2> {/* Assuming 'item.title' is the title of the project */}
+          <p>{item.description}</p> {/* Assuming 'item.description' is the description */}
+        </div>
 
-  useEffect(() => {
-    const imageToLoad = new Image();
-    imageToLoad.src = src;
-
-    imageToLoad.onload = () => {
-      setLoading(false);
-    };
-  }, [src]);
-
-  return (
-    <Fragment>
-      {loading ? placeholder : <img src={src} alt={alt} {...rest} />}
-    </Fragment>
-  );
+        {/* Image below the description */}
+        <a
+          className="project-image"
+          href={item.link}
+          onClick={(e) => {
+            e.preventDefault();
+            if (googleAnalytics?.id) {
+              ga.event({
+                action: 'Click External Project',
+                params: {
+                  post: item.title,
+                },
+              });
+            }
+          }}
+        >
+          <LazyImage
+            src={item.imageUrl}
+            alt={item.title}
+            className="w-full" {/* Removing fixed size constraints */}
+          />
+        </a>
+      </div>
+    ));
 };
-
-LazyImage.propTypes = {
-  placeholder: PropTypes.node,
-  alt: PropTypes.string,
-  src: PropTypes.string,
-};
-
-export default LazyImage;
