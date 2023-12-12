@@ -27,7 +27,7 @@ renderExternalProjects = () => {
           <LazyImage
             src={item.imageUrl}
             alt={item.title}
-            className="w-full" {/* Removing fixed size constraints */}
+            className="w-full"
           />
         </a>
       </div>
