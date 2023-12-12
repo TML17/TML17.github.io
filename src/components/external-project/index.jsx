@@ -107,6 +107,7 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
                       </div>
                     </div>
                   )}
+                  </p>
                         <LazyImage
                           src={item.imageUrl}
                           alt={'thumbnail'}
