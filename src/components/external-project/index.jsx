@@ -68,47 +68,62 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
     return array;
   };
 
-const renderExternalProjects = () => {
-  return externalProjects.map((item, index) => (
-    <a
-      className="card shadow-lg compact bg-base-100 cursor-pointer"
-      key={index}
-      href={item.link}
-      onClick={(e) => {
-        e.preventDefault();
+  const renderExternalProjects = () => {
+    return externalProjects.map((item, index) => (
+      <a
+        className="card shadow-lg compact bg-base-100 cursor-pointer"
+        key={index}
+        href={item.link}
+        onClick={(e) => {
+          e.preventDefault();
 
-        try {
-          if (googleAnalytics?.id) {
-            ga.event({
-              action: 'Click External Project',
-              params: {
-                post: item.title,
-              },
-            });
+          try {
+            if (googleAnalytics?.id) {
+              ga.event({
+                action: 'Click External Project',
+                params: {
+                  post: item.title,
+                },
+              });
+            }
+          } catch (error) {
+            console.error(error);
           }
-        } catch (error) {
-          console.error(error);
-        }
 
-        window?.open(item.link, '_blank');
-      }}
-    >
-      <div className="p-8 h-full w-full">
-        <div className="flex items-center flex-col">
-          <div className="w-full">
-            <div className="px-4">
-              <div className="text-center w-full">
-                <h2 className="font-semibold text-lg tracking-wide text-center opacity-60 mb-2">
-                  {item.title}
-                </h2>
-                {/* LazyImage component removed */}
+          window?.open(item.link, '_blank');
+        }}
+      >
+        <div className="p-8 h-full w-full">
+          <div className="flex items-center flex-col">
+            <div className="w-full">
+              <div className="px-4">
+                <div className="text-center w-full">
+                  <h2 className="font-semibold text-lg tracking-wide text-center opacity-60 mb-2">
+                    {item.title}
+                  </h2>
+                  {item.imageUrl && (
+                    <div className="avatar opacity-90">
+                      <div className="w-20 h-20 mask mask-squircle">
+                      </div>
+                    </div>
+                  )}
+                        <LazyImage
+                          src={item.imageUrl}
+                          alt={'thumbnail'}
+                          placeholder={skeleton({
+                            /*width: 'w-full',
+                            height: 'h-full',*/
+                            shape: '',
+                          })}
+                        />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </a>
     ));
-};
+  };
 
   return (
     <Fragment>
