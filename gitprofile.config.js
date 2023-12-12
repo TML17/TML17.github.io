@@ -94,28 +94,28 @@ const config = {
       title: 'Greenhouse Gas Emission Visualization',
       description:
         'Developed a robust data visualization application and implemented user-friendly interactive controls, using R and Shiny to dynamically represent greenhouse gas emissions by countries and Instituted a clean and modern web interface design, ensuring an engaging user experience with dynamic hover effects and transparency settings.',
-      imageUrl: '/images/img1.png',
+      imageUrl: 'https://ibb.co/RcSKBZk',
       link: 'https://tml17.shinyapps.io/csc324_individual_project/',
     },
     {
       title: 'DSI Performance-Tool',
       description:
         'The DSI-Performance-Tool represents a joint project carried out by a five-member team, crafted using Python and Flask, and is designed for analyzing food security policies. This tool is notable for its strong data processing abilities and its capacity for generating dynamic charts. My role mainly involved front-end development, concentrating on improving the user interface and overall user experience. This effort ensured that the tool was not only analytically robust but also intuitive and easy to use',
-      imageUrl: '/images/img2.png',
+      imageUrl: 'https://ibb.co/9qwvcjB',
       link: 'https://github.com/DemocraticSystemsIncorporated/DSI-Performance-Tool/tree/all_years',
     },
     {
       title: 'Contrastive Canonical Correlation Analysis (cCCA) Development',
       description:
         'Addressed the limitation of CCA by integrating principles from Contrastive Learning to emphasize differential features. Then introduced concepts of target datasets and background datasets, allowing cCCA to maximize correlation and intra-view variance of target data while minimizing background data variance. Developed an algorithm and conducted experiments on an artificially synthesized dataset and two real datasets using Python, showcasing superior effectiveness of the cCCA algorithm.',
-      imageUrl: '/images/img3.png',
+      imageUrl: 'https://ibb.co/wNJbL53',
       link: 'Canonical__Correlation_Analysis_based_on_Contrastive_Learning.pdf',
     },
     {
       title: 'Mixed-effects Logistic Regression Model on Fosterage Children',
       description:
         'Systematically built and evaluated mixed-effects logistic regression models. Manually processing stepwise regression with varying predictor combinations, using the AIC for optimal model selection. In the process of development, I implemented parallel processing techniques for efficient computation during model evaluation, handling the computational complexity of evaluating numerous model combinations.',
-      imageUrl: '/images/img4.png',
+      imageUrl: 'https://ibb.co/J74mV09',
       link: 'https://github.com/TML17/Dominican-Republic-Foster-Children',
     },
   ],
